@@ -17,6 +17,50 @@
             font-family: Arial, Helvetica, sans-serif;
             background: linear-gradient(#204a0a, #c4ebbe);
         }
+        .navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e91e63;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e91e63;
+}
+
         .contact-container {
             height: 100vh;
             display: flex;
@@ -137,8 +181,13 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="index.html" class="home">←Home</a>
-            
+            <div class="navbar-container">
+                <a href="index.html" class="nav-logo">Snap</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div class="contact-container">
